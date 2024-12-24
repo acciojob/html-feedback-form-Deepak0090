@@ -4,9 +4,21 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>HTML Feedback Form</title>
 </head>
 
 <body>
+	<form method="post" action="/sumbit-feedback">
+		<h1>Feedback Form</h1>
+		<label for="name">Name</label> <br>
+		<input type="text" id = "name" minlength="3" maxlength="50" required><br>
+		<label for="portfolio">Portfolio</label> <br>
+		<input type="url" id="portfolio" alt ="Wrong URL"name="portfolio" required><br>
+		<label for="favColor">Favorite Color</label> <br>
+		<input type="color" id="favColor" required><br>
+		<label for="likeness">Likeness</label><br>
+		<input type="range" minlength ="1" maxlength="100" required><br>
+	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
